@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';?
+import 'package:flutter/foundation.dart';
 import './chatScreen.dart';
 
 main() => runApp(MyApp());
@@ -18,10 +18,10 @@ final ThemeData kDefaultTheme = new ThemeData(
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-   title: "Friendlychat",
-      theme: defaultTargetPlatform == TargetPlatform.iOS         //new
-        ? kIOSTheme                                              //new
-        : kDefaultTheme,                                         //new
+      title: "Friendlychat",
+      theme: defaultTargetPlatform == TargetPlatform.iOS //new
+          ? kIOSTheme //new
+          : kDefaultTheme, //new
       home: new ChatScreen(),
     );
   }
